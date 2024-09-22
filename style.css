@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./images/CalBack.jpg");
+  background-size: cover;
+  background-position-y: 30%;
+  text-align: center;
+}
+header {
+  height: 50px;
+  position: relative;
+  top: 50px;
+  align-content: center;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(50px, auto) repeat(6, 100px);
+  opacity: 0.9;
+}
+
+.screen {
+  grid-area: 1 / 1 / span 2 /-1;
+  background-color: black !important;
+  color: wheat;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 8px;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+.input {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.output {
+  font-size: 30px;
+}
+
+.screen,
+.all-clear,
+.delete,
+.operator,
+.number,
+.equals {
+  border: 1.5px solid black;
+  background-color: cornsilk;
+  font-weight: bolder;
+  font-size: 25px;
+}
